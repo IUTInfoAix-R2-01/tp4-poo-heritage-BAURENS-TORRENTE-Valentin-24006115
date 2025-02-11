@@ -1,0 +1,23 @@
+Ex5: "Que signifie redéfinir une méthode?"
+Ceci veut dire que l'on veut ecrire une fonction ayant la même
+nom que une dans ca classe, alors on met @Override devant la fontion
+pour la changer de celle d'origine
+
+Ex6: "Quelles méthodes de Velo et VeloElec sont redéfinies ?"
+Se sont les fonction toString() et getPuissance()
+
+Ex7: "Que signifie l’annotation @Override, placée parfois avant la définition d’une méthode ?"
+@Override permet de redefinir la contenu d'une fonction qui etait presente dans la classe mere
+
+Ex8: "De manière générale, lorsque l’annotation @Override est pertinente dans le code, qu’apporte sa pré-
+sence ? Dans ce cas, peut-on s’en dispenser ? Tester."
+Elle est pertinente quand on souhaite redefinir une fonction qui etait deja presente dans la classe mere
+
+Ex9: "Annoter par @Override toutes les méthodes pertinentes, dans les 2 classes"
+Dans les methodes toString() et getPuissance()
+
+Ex10: "Que signifie l’appel super.getPuissane(FrequenceCoupsDePedale) dans la méthode
+VeloElec.getPuissane() "
+super permet d'appellé tout les methodes et constructeur de la classe mere.
+Dans ce cas, elle permet d'ajouté a la methode de la classe mere l'attribut
+facteurPuissanceMoteur.

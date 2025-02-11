@@ -1,10 +1,11 @@
 package cycles;
 import java.util.Random;
 public class velo {
-	private final double DEFAULT_BRACKET = 13.0;
+	private static double DEFAULT_BRACKET = 13.0;
 	private double braquet;
 	private double diamRoue;
 	private Random genAlea = new Random();
+	
 	public velo(double braquet, double diamRoue) {
 		this.braquet = braquet;
 		this.diamRoue = diamRoue;

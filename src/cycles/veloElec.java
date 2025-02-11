@@ -1,7 +1,7 @@
 package cycles;
 
 public class veloElec extends velo {
-	private final double DEFAUT_FACTEUR_PUISSANCE_MOTEUR = 15.0;
+	private static double DEFAUT_FACTEUR_PUISSANCE_MOTEUR = 15.0;
 	private double facteurPuissanceMoteur;
 	
 	public veloElec(double braquet, double diamRoue, double coupleMoteur) {
@@ -28,6 +28,7 @@ public class veloElec extends velo {
 	public String toString() {
 		return "veloElec [facteurPuissanceMoteur=" + facteurPuissanceMoteur + "]";
 	}
+	@Override
 	public double getPuissance(double frequenceCoupDePedale) {
 		return super.getPuissance(frequenceCoupDePedale) * facteurPuissanceMoteur;
 	}
